@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BOAZO ENTERPRISES LIMITED</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #004080;
+      color: white;
+      padding: 20px 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 2px;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 60px;
+      padding-top: 70px; /* offset for sticky nav */
+    }
+    h2 {
+      color: #004080;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 1.1em;
+    }
+    footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9em;}
+nav ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+  display: flex;         /* Align items in a row */
+  justify-content: center; /* ✅ Center horizontally */
+  background-color: #f2f2f2;
+}
+
+nav ul li {
+  margin-right: 20px; /* Space between menu items */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Remove spacing after the last item */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #ddd;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BOAZO ENTERPRISES LIMITED</h1>
+	<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="About.html">About Us</a></li>
+    <li><a href="Services.html">Services</a></li>
+	 <li><a href="Contact.html">Contact Us</a></li>
+  </ul>
+</nav>
+  </header>
+  <head>
+<style>
+  .slideshow-container {
+    width: 700px;
+    height: 450px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .slideshow-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  /* Fade effect */
+  .slideshow-container img:nth-child(1) {
+    animation: fade 14s infinite;
+    animation-delay: 0s;
+  }
+
+  /* Slide from left */
+  .slideshow-container img:nth-child(2) {
+    animation: slideIn 14s infinite;
+    animation-delay: 3s;
+  }
+
+  /* Zoom in */
+  .slideshow-container img:nth-child(3) {
+    animation: zoom 14s infinite;
+    animation-delay: 6s;
+  }
+
+  /* Fade again */
+  .slideshow-container img:nth-child(4) {
+    animation: fade 14s infinite;
+    animation-delay: 8s;
+  }
+
+  /* Slide in from right */
+  .slideshow-container img:nth-child(5) {
+    animation: slideInRight 14s infinite;
+    animation-delay: 10s;
+  }
+
+  /* Zoom again */
+  .slideshow-container img:nth-child(6) {
+    animation: zoom 14s infinite;
+    animation-delay: 12s;
+  }
+
+  /* Fade again */
+  .slideshow-container img:nth-child(7) {
+    animation: fade 14s infinite;
+    animation-delay: 14s;
+  }
+
+  /* Keyframes for fade */
+  @keyframes fade {
+    0%, 100% { opacity: 0; }
+    10%, 30% { opacity: 1; }
+    40% { opacity: 0; }
+  }
+
+  /* Keyframes for slide in from left */
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  /* Keyframes for slide in from right */
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  /* Keyframes for zoom effect */
+  @keyframes zoom {
+    0% {
+      transform: scale(1);
+      opacity: 0;
+    }
+    10% {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+    30% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    40% {
+      transform: scale(1);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+  <img src="images/boaz.png" alt="First Image">
+  <img src="images/boaz1.png" alt="Second Image">
+  <img src="images/boaz3.png" alt="Third Image">
+  <img src="images/boaz4.jpg" alt="Fourth Image">
+  <img src="images/boaz5.jpg" alt="Fifth Image">
+  <img src="images/boaz6.jpg" alt="Sixth Image">
+  <img src="images/boaz7.jpg" alt="Seventh Image">
+</div>
+  <footer>
+  <p> designed and developed by:</p>
+<div style="width: 700px; border: none; margin: 0 auto; display: block;">
+  <marquee behavior="scroll" direction="left" scrollamount="5">
+    SPOTVILLE KENYA SOLUTION, TELEPHONE NO. +254720041566, +254752505059.
+  </marquee>
+</div> <p> All rights reserved.</p>
+  </footer>
+</body>
+</html>
